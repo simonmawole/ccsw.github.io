@@ -8,20 +8,26 @@
 </head>
 <body>
     <h1>Currency Converter</h1>
-    <form>
-        <input type="text" id="currency_from" placeholder="amount"/><br/>
-        <select id="from_currency_type">
+    <form action="/" method="POST">
+        <input type="text" id="amount" placeholder="amount"/><br/>
+        <select id="from_currency">
             <option>Select currency</option>
+            <option>USD</option>
+            <option>TZS</option>
         </select>
         <p>Convert to</p>
-        <select id="to_currency_type">
+        <select id="to_currency">
             <option>Select currency</option>
+            <option>TZS</option>
+            <option>USD</option>
         </select><br/><br/>
-        <button id="convert">Convert</button>
+        <input type="submit" value="Convert" id="convert"/>
         <p>Equal to</p>
         <b id="result"></b>
     </form>
-    <!--Load service worker-->
+    <!--Script files-->
     <script async src="/sw.js"></script>
+    <script async src="/db.js"></script>
+    <script async src="/app.js"></script>
 </body>
 </html>
