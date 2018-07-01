@@ -9,17 +9,19 @@
 <body>
     <h1>Currency Converter</h1>
     <form>
-        <input type="text" id="currency_from" placeholder="amount"/>
+        <input type="text" id="currency_from" placeholder="amount"/><br/>
         <select id="from_currency_type">
             <option>Select currency</option>
         </select>
         <p>Convert to</p>
         <select id="to_currency_type">
             <option>Select currency</option>
-        </select>
-        <button id="convert" value="Convert"/>
+        </select><br/><br/>
+        <button id="convert">Convert</button>
         <p>Equal to</p>
         <b id="result"></b>
     </form>
+    <!--Load service worker-->
+    <script async src="//sw.js"></script>
 </body>
 </html>
